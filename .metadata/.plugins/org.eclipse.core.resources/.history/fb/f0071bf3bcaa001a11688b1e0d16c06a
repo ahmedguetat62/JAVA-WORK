@@ -1,0 +1,8 @@
+
+public class Cercle {
+	private float abcisse,ordonne;
+	public Cercle(float a ,float b ) {
+		this.abcisse = a ; 
+		this.ordonne = b;
+	}
+}

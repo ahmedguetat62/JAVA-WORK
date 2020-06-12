@@ -1,0 +1,4 @@
+
+public class Cercle {
+	private float abcisse,ordonneé; 
+}

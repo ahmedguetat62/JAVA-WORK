@@ -1,0 +1,23 @@
+import java.util.*;
+public class Test  {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		float abcisse,ordonne;
+		double ray;
+		int x;
+		System.out.println("Saisie Le abcisse:");
+		abcisse = sc.nextFloat();
+		
+		System.out.println("Saisie Le ordonne:");
+		ordonne = sc.nextFloat();
+
+		
+		
+		x = sc.nextInt();
+		
+		System.out.println("Saisie Le ray:");
+		ray = sc.nextFloat();
+		
+		
+	}
+}

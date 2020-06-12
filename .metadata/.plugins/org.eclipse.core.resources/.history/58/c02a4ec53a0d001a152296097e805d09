@@ -1,0 +1,42 @@
+
+public class Cercle {
+	
+	private static  double rayon ;
+	private static  Point  center ;
+	public static final double PI = 3.14; // constant 
+	// construct 
+	public Cercle(Point center, double rayon) {
+		this.center = center ; 
+		this.rayon = rayon ; 
+	}
+	public Cercle(double rayon) {
+		this.rayon= rayon; 
+		this.center =  new Point(); 
+	}
+	//toString 
+	public String toString() {
+		return "Cercle [rayon=" + rayon + ", center=" + center + "]";
+	}
+	//methods
+	public double calculeSurface() {
+		return rayon*rayon*PI; 
+	}
+	//setters and getters 
+	/*public void setPi(double PI) {
+		PI = PI;
+	} can't be replaced */
+	public void  setCentre(Point center) {
+		this.center = center ; 
+	}
+	public double getRayon() {
+		return this.rayon; 
+	}
+	public static void setRayon(double rayon){
+		//this.rayon = rayon;
+		Cercle.rayon = rayon;
+	}
+	public Point getCentre() {
+		return this.center; 
+		//center;
+	}
+}

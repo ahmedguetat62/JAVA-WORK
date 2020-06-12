@@ -1,0 +1,12 @@
+
+public class Cercle {
+	private Point Centre ; 
+	private double rayon ; 
+	public Cercle(Point p,double b) {
+		this.Centre = p ;
+		this.rayon = b;
+	}
+	public String toString() {
+		return "Cercle[Point:"+this.Centre+"|rayon:"+this.rayon+"]";
+	}
+}

@@ -1,0 +1,8 @@
+
+public class Test implements FormeGeometrique {
+	public static void main(String[] args) {
+		
+	}
+
+	
+}

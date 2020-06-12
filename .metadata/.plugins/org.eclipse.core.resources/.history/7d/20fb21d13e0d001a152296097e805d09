@@ -1,0 +1,73 @@
+
+public class Rectangle {
+	private Point coinSupG,coinSupD,coinInfG,coinInfD;
+	private int longeur , largeur;
+	
+	// construct 
+	
+	public Rectangle(Point coinSupG,int longeur,int largeur) {
+		if(longeur <0 || largeur <0 ) 
+			System.out.println("Il doit etre positive");
+		else {
+			if(longeur < largeur ) 
+				System.out.println("Le longeur Doit etre superieur a largeur ");
+			else {
+				this.coinSupD =  new Point(coinSupG.getX()+longeur,coinSupG.getY());
+				this.coinInfG = new Point(coinSupG.getX(), coinSupG.getY()-largeur);
+				this.coinSupG = coinSupG;
+				this.longeur = longeur ;
+				this.largeur = largeur;
+			}
+		}
+	}
+		
+	//setters 
+	public Point getCoinSupG() {
+		return coinSupG;
+	}
+	
+	public void setCoinSupG(Point coinSupG) {
+		this.coinSupG = coinSupG;
+	}
+	public Point getCoinSupD() {
+		return coinSupD;
+	}
+	public void setCoinSupD(Point coinSupD) {
+		this.coinSupD = coinSupD;
+	}
+	public Point getCoinInfG() {
+		
+		return coinInfG;
+	}
+	public void setCoinInfG(Point coinInfG) {
+		this.coinInfG = coinInfG;
+	}
+	public Point getCoinInfD() {
+		return coinInfD;
+	}
+	public void setCoinInfD(Point coinInfD) {
+		this.coinInfD = coinInfD;
+	}
+	public int getLongeur() {
+		return longeur;
+	}
+	public void setLongeur(int longeur) {
+		this.longeur = longeur;
+	}
+	public int getLargeur() {
+		return largeur;
+	}
+	public void setLargeur(int largeur) {
+		this.largeur = largeur;
+	}
+
+	@Override
+	public String toString() {
+		return "Rectangle : \n\ncoinSupG=[" + this.coinSupG.getX() +","+ this.coinSupG.getY()+"]\t\t\t\tcoinSupD=[" + this.coinSupD.getX() +","+this.coinSupD.getY()+ "],\n\n\n\ncoinInfG=[" + this.coinInfG.getX() +","+this.coinInfG.getY()+ "]\t\t\t\tcoinInfD=["
+				+ this.coinInfD.getX() +","+this.coinInfD.getY()+ "]\n\n\nlongeur=" +this.longeur + "\nlargeur=" + this.largeur + "";
+	}
+	
+	
+	
+
+}

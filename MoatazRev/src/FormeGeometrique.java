@@ -1,0 +1,5 @@
+
+public interface FormeGeometrique {
+	public double perimtre();
+	public double surface();
+}

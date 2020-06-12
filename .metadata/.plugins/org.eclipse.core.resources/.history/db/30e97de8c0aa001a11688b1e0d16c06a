@@ -1,0 +1,10 @@
+import java.util.*;
+public class Test  {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		float abcisse,ordonne;
+		double ray;
+		System.out.println("Saisie Le center:");
+		
+	}
+}
